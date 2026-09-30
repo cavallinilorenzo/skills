@@ -10,7 +10,7 @@ Write this repo's **team doc**: the **areas** the work splits into (frontend, ba
 
 The team doc routes work; it doesn't enforce it. Every collaborator on a personal repo can still touch everything. Enforcement belongs to the tracker (branch protection, required reviews), not to a skill.
 
-The issue tracker should have been provided to you. If not, tell the user to run `/setup-matt-pocock-skills`. A team needs a tracker every member can see: on the local-markdown tracker, the team doc only works if `.scratch/` is committed and shared.
+**Tracker first.** The issue tracker should have been provided to you through the `## Agent skills` block. If it wasn't, stop before writing anything: tell the user to run `/setup-matt-pocock-skills`, then re-run `/setup-team`. Without a tracker doc, `/wayfinder` falls back to the local tracker, and owners set on the real tracker would never be read. A team needs a tracker every member can see: on the local-markdown tracker, the team doc only works if `.scratch/` is committed and shared.
 
 Run it the first time the team forms, and again whenever someone joins, leaves, or changes area. Editing `docs/agents/team.md` by hand works just as well.
 
@@ -43,7 +43,7 @@ Show the draft of `docs/agents/team.md`, built from [team.md](./team.md) with th
 
 On the tracker, create an `area:<area>` label for every area, plus `wayfinder:in-progress`. Leave labels of removed areas in place unless the user asks: open issues may still carry them.
 
-Add a `### Team` sub-block to the `## Agent skills` block in whichever of `CLAUDE.md` / `AGENTS.md` holds it, updating it in place on a re-run:
+Add a `### Team` sub-block to the existing `## Agent skills` block in whichever of `CLAUDE.md` / `AGENTS.md` holds it, updating it in place on a re-run:
 
 ```markdown
 ### Team
